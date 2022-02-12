@@ -1,37 +1,17 @@
-// Type conversion 
+// numerical operations
 
-// conversion to string 
+let result
 
-//String()
-let x = String(1111) //1111
+result = Math.PI //3.14
+result = Math.round(3.5) //4
+result = Math.ceil(3.4) //4
+result = Math.floor(3.7) //3
+result = Math.sqrt(9) //3
+result = Math.abs(-8) //8
+result = Math.pow(3, 2) //9
+result = Math.min(3, 2, -57, 99, 82, 13) //-57
+result = Math.max(3, 2, -57, 99, 82, 13) //99
 
-x = String(2 + 2) //4
-x = String(true) //true
-x = String(new Date()) 
-x = String(['one', 'two', 'three'])
+result = Math.round(Math.random() * 100) // целое число от 0 до 100
 
-//toString()
-x = ['one', 'two', 'three'].toString()
-
-// conversion to number
-
-//Number()
-let y = '5.666'
-y = Number('5.666') //  аналогично '+'
-y = Number(false) // true 1, false 0
-y = Number(null) // 0
-y = Number('text') // NaN
-y = Number([1]) // 1
-y = Number([1, 2]) // NaN
-
-//parseInt()
-y = parseInt('566.666') // 566 - распознает только целое число
-y = parseFloat('566.666') // 566.666 - для дробных чисел
-
-//Неявное приведение типов
-
-const m = '5'
-const n = '3'
-let l = m + n //'53'
-    l = m - n //2
-    l = m * n //15
+console.log(result)
