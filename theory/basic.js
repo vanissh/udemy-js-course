@@ -1,4 +1,4 @@
-// numerical operations
+//NUMBERS
 
 let result
 
@@ -15,7 +15,7 @@ result = Math.max(3, 2, -57, 99, 82, 13) //99
 result = Math.round(Math.random() * 100) // целое число от 0 до 100
 
 
-//string manipulations 
+//STRINGS
 
 const firstName = 'Jack'
 const lastName = 'Brown'
@@ -43,3 +43,8 @@ result = firstName.slice(-3) // ack - можно извлечь последни
 result = colors.replace('green', 'yellow') // 'red, orange, blue, yellow'
 
 result = colors.includes('green') // true
+
+
+//TEMPLATE STRINGS
+
+
