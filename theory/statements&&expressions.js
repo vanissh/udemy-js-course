@@ -18,3 +18,4 @@ if(number > 0){
 // console.log(`${if(number > 0){
 //     const text = 'The number is positive'
 // }}`) // statement -  выдаст ошибку
+
