@@ -45,6 +45,28 @@ result = colors.replace('green', 'yellow') // 'red, orange, blue, yellow'
 result = colors.includes('green') // true
 
 
-//TEMPLATE STRINGS
+//COMPARISON OPERATORS
+
+// == - с приведением типов
+// === - без приведения типов
+
+result = true == 1 //true
+result = true == 23 //false
+
+result = true == '1' //false
+result = true == '23' //false /// аналогично для false
+
+result = null == undefined // true
+result = null === undefined // false
+
+result = NaN == NaN // false!!!
+result = NaN === NaN // false!!!
+
+//////precedence
+
+// оператор = имеет один из самых низких приоритетов(3 по таблице), обратная ассоциативность right-to-left
+let x, y // undefined
+x = y = 3 // x = 3, y = 3, т.к. значение присваивается справа налево
+
 
 
