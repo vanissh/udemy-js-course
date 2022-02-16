@@ -68,5 +68,3 @@ result = NaN === NaN // false!!!
 let x, y // undefined
 x = y = 3 // x = 3, y = 3, т.к. значение присваивается справа налево
 
-
-
