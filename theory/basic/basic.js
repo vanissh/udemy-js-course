@@ -14,6 +14,8 @@ result = Math.max(3, 2, -57, 99, 82, 13) //99
 
 result = Math.round(Math.random() * 100) // целое число от 0 до 100
 
+result = '12.2px'
+parseFloat(result) // 12.2
 
 //STRINGS
 
