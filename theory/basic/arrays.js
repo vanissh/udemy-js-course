@@ -49,3 +49,57 @@ function log(a, b, c){
 const arr = [4, 7778735, 598549]
 
 log(...arr)
+
+// методы перебора массивов 
+
+//filter
+
+const names = ['Ivan', 'Anna', 'Ksenia', 'Vladilen']
+
+let names1 = names.filter(name => name.length >= 5)
+console.log(names1); // ['Ksenia', 'Vladilen'] - т.о метод filter не изменяет текущий массив, но возвращает новый
+
+
+// map
+
+names1 = names.map(name => name + 'yyy') // не изменяет текущий массив, создает новый 
+console.log(names1)
+
+// every
+
+names1 = names.every(name => name.length > 5) // вернет true или false
+console.log(names1)
+
+// some вернет true при хотя бы одном совпадении
+
+// reduce 
+//получить сумму чисел 
+
+const arr = [5, 7, 8, 4, 3, 6]
+
+const result = arr.reduce((sum, current) => sum + current, 3)
+
+//собрать строку из массива
+
+const arr1 = ['apple', 'pear', 'plum']
+const res = arr1.reduce((sum, current) => sum + ', ' + current) //apple, pear, plum
+
+const obj = {
+    ivan: 'persone',
+    ann: 'persone',
+    dog: 'animal',
+    cat: 'animal'
+}
+const names2 = []
+
+for(let key in obj){
+    if(obj[key] === 'persone'){
+        names2.push(key)
+    }
+}
+
+const newArr = Object.entries(obj)
+.filter(item => item[1] === 'persone')
+.map(item => item[0])
+
+console.log(newArr)
